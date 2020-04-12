@@ -58,11 +58,14 @@ h3 {
   position: fixed;
   z-index: 99;
   width: 100%;
-  margin: 0 0 30px;
+  margin: 0;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #logo {
@@ -143,7 +146,7 @@ h3, h2 {
   position: relative;
   float: left;
   width: 274px;
-  margin: 20px 0 25px;
+  margin: 20px;
   overflow: auto;
 }
 
@@ -187,6 +190,7 @@ h3, h2 {
 
 #contact-form li {
   margin-bottom: 10px;
+  width: 768px;
 }
 
 label,
@@ -239,7 +243,7 @@ body{
     margin: 0;
   }
 nav{
-    max-width: 980px;
+    max-width: 768px;
     float: right;
   }
   .main-section{
@@ -248,20 +252,22 @@ nav{
   }
   #contact-form li {
     margin-bottom: 10px;
-    width: 980px;
+    width: 768px;;
   }
 }
 
   @media only screen 
   and (max-width: 768px)
-  and (min-width: 641px)
-  {
+  and (min-width: 641px){
+
   body{
       margin: 0px;
     }
+
   .container{
     max-width: 768px;
-  }
+    }
+
   #masthead{
       width: 100%;
       display: flex;
@@ -269,18 +275,27 @@ nav{
       position: fixed;
       margin: 0;
     }
+
   nav{
       max-width: 768px;
       float: right;
     }
+
     .main-section{
       margin: 20px;
-      max-width: 960px;
+      max-width: 768px;
     }
+
     #contact-form li {
       margin-bottom: 10px;
       width: 768px;
     }
+
+    .work{
+      width:100%
+    }
+
+  }
 
 
   @media only screen
@@ -296,11 +311,12 @@ nav{
 
   .container{
     max-width: 640px;
+    margin: auto;
     }
 
   #main-container{
     padding-top: 0;
-    width: 95%;
+    width: 90%;
     margin: 0px;
     }
 
@@ -308,6 +324,7 @@ nav{
      width: 100%;
      text-align: center;
     }
+
   nav a {
      float: none;
      margin-top: 15px;
@@ -332,14 +349,10 @@ nav{
     width: 100%;
     margin-bottom: 20px;
     }
+
+    .work{
+      width: 100%;
+      margin: 20px;
+    }
   }
 /*portfolio page*/
-
-.work{
-  width: 100%;
-}
-
-/*
-
-
-  }
